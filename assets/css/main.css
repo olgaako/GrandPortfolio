@@ -586,8 +586,13 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.row_2{
+  display:flex;
+  justify-content: center;
+}
+
 .about .about-img {
-  min-height: 500px;
+  max-height: 300px;
 }
 
 .about h3 {
@@ -1114,9 +1119,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Chefs Section
+# Projects Section
 --------------------------------------------------------------*/
-.chefs .chef-member {
+.projects .projects {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -1125,12 +1130,12 @@ section {
   transition: 0.3s;
 }
 
-.chefs .chef-member .member-img {
+.projects .pro-thing .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .chef-member .member-img:after {
+.projects .pro-thing .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -1142,7 +1147,7 @@ section {
   z-index: 1;
 }
 
-.chefs .chef-member .social {
+.projects .pro-thing .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1153,7 +1158,7 @@ section {
   z-index: 2;
 }
 
-.chefs .chef-member .social a {
+.projects .pro-thing .social a {
   transition: color 0.3s;
   color: rgba(55, 55, 63, 0.4);
   margin: 15px 12px;
@@ -1162,33 +1167,32 @@ section {
   text-align: center;
 }
 
-.chefs .chef-member .social a:hover {
+.projects .pro-thing .social a:hover {
   color: rgba(55, 55, 63, 0.9);
 }
 
-.chefs .chef-member .social i {
+.projects .pro-thing .social i {
   font-size: 18px;
 }
 
-.chefs .chef-member .member-info {
+.projects .pro-thing .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .chef-member .member-info h4 {
+.projects .pro-thing .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: var(--color-secondary);
 }
-
-.chefs .chef-member .member-info span {
+.projects .pro-thing .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: rgba(33, 37, 41, 0.4);
 }
 
-.chefs .chef-member .member-info p {
+.projects .pro-thing .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1196,12 +1200,12 @@ section {
   color: rgba(33, 37, 41, 0.7);
 }
 
-.chefs .chef-member:hover {
+.projects .pro-thing:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
 }
 
-.chefs .chef-member:hover .social {
+.projects .pro-thing:hover .social {
   right: 8px;
   opacity: 1;
 }
